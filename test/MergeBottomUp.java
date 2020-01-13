@@ -109,4 +109,19 @@ public class MergeBottomUp {
             fail("should not throw error");
         }
     }
+
+    @Test
+    public void mergeSameArray() {
+        try {
+            int[] arr1 = {2,4,6};
+            int[] arr2 = {2,4,6};
+            int[] merged = {2,2,4,4,6,6};
+            int[] mergedAns = Program.merge(arr1,arr2);
+            for (int i = 0; i < merged.length; i++) {
+                assertEquals(merged[i],mergedAns[i]);
+            }
+        } catch (Exception e) {
+            fail("should not throw error");
+        }
+    }
 }
