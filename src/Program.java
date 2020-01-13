@@ -114,8 +114,10 @@ public class Program {
 		if (arr1==null || arr2 == null) return false;
 		if (size(arr1)!=size(arr2)) return false;
 		for (int i=0; i<size(arr1); i++)
-			if (arr1[i]==arr2[i]) return true;
-		return false;
+			// FIXME: if (arr1[i]==arr2[i]) return true;
+			if (arr1[i]!=arr2[i]) return false;
+		// FIXME: return false;
+		return true;
 	}
 	
 	
