@@ -28,8 +28,12 @@ public class MinValueIndexBottomUp {
 
     @Test
     public void minValueIndex() {
-        int[] arr = {3,4,5,2,7,3};
-        int minValueIndex = Program.minValueIndex(arr);
-        assertEquals(3, minValueIndex);
+        try {
+            int[] arr = {3, 4, 5, 2, 7, 3};
+            int minValueIndex = Program.minValueIndex(arr);
+            assertEquals(3, minValueIndex);
+        } catch (Exception e) {
+            fail("should not throw error");
+        }
     }
 }
