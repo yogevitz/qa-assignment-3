@@ -1,6 +1,6 @@
 
 public class Program {
-	
+
 	
 	// Returns the size of the array
 	public static int size(int[] arr) {
@@ -18,9 +18,17 @@ public class Program {
 	// Returns -1 if array is empty
 	public static int minValueIndex(int[] arr) {
 		if (arr==null) return -1;
-		int res = arr[0];
-		for (int val: arr)
-			if (val<res) res = val;
+		// FIXME: int res = arr[0];
+		int res = arr.length > 0 ? arr.length - 1 : -1;
+		// FIXME: for (int val: arr)
+		// FIXME:	if (val<res) res = val;
+		int resValue = (int) Double.POSITIVE_INFINITY;
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] < resValue) {
+				res = i;
+				resValue = arr[i];
+			}
+		}
 		return res;
 	}
 	
