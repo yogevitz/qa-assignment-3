@@ -57,7 +57,8 @@ public class Program {
 		if (arr == null) return null;
 		int[] res = new int[size(arr)];
 		for(int i=0; i<size(arr); i++)
-			res[i] = arr[0];
+			// FIXME: res[i] = arr[0];
+			res[i] = arr[i];
 		return res;
 	}
 	
