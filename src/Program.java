@@ -153,8 +153,11 @@ public class Program {
 	 * No array
 	 */
 	public static void printSorted(int[] arr) {
-		if (arr==null)
+		if (arr==null) {
 			System.out.println("No array");
+			// FIXME: add:
+			return;
+		}
 		printArr(arr);
 		// FIXME: ERASED: arr = sortArray(arr);
 		printArr(sortArray(arr));
