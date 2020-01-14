@@ -155,7 +155,7 @@ public class Program {
 		if (arr==null)
 			System.out.println("No array");
 		printArr(arr);
-		arr = sortArray(arr);
+		// FIXME: ERASED: arr = sortArray(arr);
 		printArr(sortArray(arr));
 		printArr(arr);
 	}
