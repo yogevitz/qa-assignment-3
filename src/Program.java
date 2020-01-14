@@ -85,7 +85,8 @@ public class Program {
 	public static int[] swapMinMax(int[] arr) {
 		int[] res = copyArr(arr);
 		int minInd = minValueIndex(arr);
-		int maxInd = maxValue(arr);
+		// FIXME: int maxInd = maxValue(arr);
+		int maxInd = maxValueIndex(arr);
 		if (minInd <0 || maxInd <0) return null;
 		res[minInd] = arr[maxInd];
 		res[maxInd] = arr[minInd];
