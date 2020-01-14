@@ -60,8 +60,9 @@ public class Program {
 	
 	// Returns the minimum value in the array
 	public static int minValue(int[] arr) {
-		int ind = maxValueIndex(arr);
-		return arr[ind]; 
+		// FIXME: int ind = maxValueIndex(arr);
+		int ind = minValueIndex(arr);
+		return arr[ind];
 	}
 	
 	// Returns sum of minimum and maximum values in the array
