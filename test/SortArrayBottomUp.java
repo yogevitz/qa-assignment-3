@@ -43,7 +43,7 @@ public class SortArrayBottomUp {
     }
 
     @Test
-    public void sortArrayRecurringNum() {
+    public void sortArrayRepeatedNum() {
         try {
             int[] arr = {5,2,8,5,5,1};
             int[] sortedArr = {1,2,5,5,5,8};
