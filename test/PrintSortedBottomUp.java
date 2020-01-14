@@ -25,7 +25,7 @@ public class PrintSortedBottomUp {
         System.setErr(originalErr);
     }
 
-    @Test (expected = NullPointerException.class)
+    @Test
     public void printSortedNULL() {
         Program.printSorted(null);
         assertEquals("No array\n", outContent.toString());
