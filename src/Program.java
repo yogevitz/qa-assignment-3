@@ -39,8 +39,7 @@ public class Program {
 		// FIXME: add:
 		if (arr==null) return -1;
 		if (size(arr)<1) return -1;
-		// FIXME: int res = arr[0];
-		int res = arr.length > 0 ? arr.length - 1 : -1;
+		int res = arr[0];
 		// FIXME: for (int val: arr)
 		// FIXME:	if (val>res) res = val;
 		int resValue = (int) Double.NEGATIVE_INFINITY;
