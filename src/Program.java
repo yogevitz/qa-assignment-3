@@ -18,9 +18,9 @@ public class Program {
 	// Returns -1 if array is empty
 	public static int minValueIndex(int[] arr) {
 		if (arr==null) return -1;
-        // FIXME: removed: if (size(arr)<1) return -1;
-        // FIXME: int res = arr[0];
-		int res = arr.length > 0 ? arr.length - 1 : -1;
+        // FIXME: add:
+		if (size(arr)<1) return -1;
+        int res = arr[0];
 		// FIXME: for (int val: arr)
 		// FIXME:	if (val<res) res = val;
 		int resValue = (int) Double.POSITIVE_INFINITY;
