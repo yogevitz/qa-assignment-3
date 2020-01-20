@@ -8,7 +8,7 @@ public class MinValueIndexTopDown {
     @Test
     public void minValueIndexNULL() {
         try {
-            int minValueIndex = ProgramStubForMinValue.minValueIndex(null);
+            int minValueIndex = ProgramStubForMinValueIndex.minValueIndex(null);
             assertEquals(-1, minValueIndex);
         } catch (Exception e) {
             fail("should not throw error");
@@ -19,7 +19,7 @@ public class MinValueIndexTopDown {
     public void minValueIndexEmpty() {
         try {
             int[] arr = new int[0];
-            int minValueIndex = ProgramStubForMinValue.minValueIndex(arr);
+            int minValueIndex = ProgramStubForMinValueIndex.minValueIndex(arr);
             assertEquals(-1, minValueIndex);
         } catch (Exception e) {
             fail("should not throw error");
@@ -30,7 +30,7 @@ public class MinValueIndexTopDown {
     public void minValueIndex() {
         try {
             int[] arr = {3, 4, 5, 2, 7, 3};
-            int minValueIndex = ProgramStubForMinValue.minValueIndex(arr);
+            int minValueIndex = ProgramStubForMinValueIndex.minValueIndex(arr);
             assertEquals(3, minValueIndex);
         } catch (Exception e) {
             fail("should not throw error");
@@ -40,7 +40,7 @@ public class MinValueIndexTopDown {
 
 
 
-class ProgramStubForMinValue extends Program{
+class ProgramStubForMinValueIndex extends Program{
 
     public static int minValueIndex(int[] arr) {
         if (arr == null) return -1;
