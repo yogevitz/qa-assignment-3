@@ -8,7 +8,7 @@ public class MaxValueIndexTopDown {
     @Test
     public void maxValueIndexNULL() {
         try {
-            int maxValueIndex = ProgramStubForMaxValue.maxValueIndex(null);
+            int maxValueIndex = ProgramStubForMaxValueIndex.maxValueIndex(null);
             assertEquals(-1, maxValueIndex);
         } catch (Exception e) {
             fail("should not throw error");
@@ -19,7 +19,7 @@ public class MaxValueIndexTopDown {
     public void maxValueIndexEmpty() {
         try {
             int[] arr = new int[0];
-            int maxValueIndex = ProgramStubForMaxValue.maxValueIndex(arr);
+            int maxValueIndex = ProgramStubForMaxValueIndex.maxValueIndex(arr);
             assertEquals(-1, maxValueIndex);
         } catch (Exception e) {
             fail("should not throw error");
@@ -30,7 +30,7 @@ public class MaxValueIndexTopDown {
     public void maxValueIndex() {
         try {
             int[] arr = {3, 4, 5, 2, 7, 3};
-            int maxValueIndex = ProgramStubForMaxValue.maxValueIndex(arr);
+            int maxValueIndex = ProgramStubForMaxValueIndex.maxValueIndex(arr);
             assertEquals(4, maxValueIndex);
         } catch (Exception e) {
             fail("should not throw error");
@@ -40,7 +40,7 @@ public class MaxValueIndexTopDown {
 
 
 
-class ProgramStubForMaxValue extends Program{
+class ProgramStubForMaxValueIndex extends Program{
 
     public static int maxValueIndex(int[] arr) {
         if (arr == null) return -1;
