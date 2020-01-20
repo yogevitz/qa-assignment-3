@@ -57,9 +57,10 @@ public class MergeBottomUp {
         try {
             int[] arr1 = {6,2,8};
             int[] arr2 = null;
+            int[] arr1Sorted = {2,6,8};
             int[] merged = Program.merge(arr1,arr2);
             for (int i = 0; i < merged.length; i++) {
-                assertEquals(arr1[i], merged[i]);
+                assertEquals(arr1Sorted[i], merged[i]);
             }
         } catch (Exception e) {
             fail("should not throw error");
@@ -71,9 +72,10 @@ public class MergeBottomUp {
         try {
             int[] arr1 = null;
             int[] arr2 = {6,2,8};
+            int[] arr2Sorted = {2,6,8};
             int[] merged = Program.merge(arr1,arr2);
             for (int i = 0; i < merged.length; i++) {
-                assertEquals(arr2[i], merged[i]);
+                assertEquals(arr2Sorted[i], merged[i]);
             }
         } catch (Exception e) {
             fail("should not throw error");
